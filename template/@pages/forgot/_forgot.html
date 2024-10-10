@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-KQX63JDD74"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-KQX63JDD74');
+	</script>
+    <link rel="shortcut icon" href="imgs/_forgot_favicon.ico" type="image/x-icon"/>
+    <title>Topic題庫網</title>
+    <meta name="viewport" content="user-scalable=no,width=device-width,initial-scale=1,maximum-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/_forgot_style.css">
+    <script src="https://kit.fontawesome.com/86580c57ae.js" crossorigin="anonymous"></script>
+</head>
+<body dir="ltr">
+<tpc-app>
+    <div id="head" class="tpc-app">
+        <div id="masthead-container" class="tpc-app">
+            <tpc-masthead-container id="masthead" class="masthead-end" role="banner">
+                <div id="ticker" class="tpc-masthead"></div>
+                <div id="interstitial" class="tpc-masthead"></div>
+                <div id="container" class="tpc-masthead">
+                    <div id="start" class="tpc-masthead">
+                        <tpc-logo id="main-logo" class="tpc-masthead">
+                            <a id="logo" class="tpc-simple-endpoint tpc-logo" href="/" title="Topic首頁">
+                                <div class="tpc-logo">
+                                    <logo class="tpc-logo">
+                                        <tpc-icon id="logo-icon" class="logo">
+                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com"
+                                                 viewBox="200 300 500 500"
+                                                 style="pointer-events: none; display: block;">
+                                                <defs>
+                                                    <style bx:fonts="Hammersmith One">@import url(https://fonts.googleapis.com/css2?family=Hammersmith+One%3Aital%2Cwght%400%2C400&amp;display=swap);</style>
+                                                </defs>
+                                                <path d="M 367.115 503.402 H 517.641 L 517.641 503.402 L 540.641 527.717 L 517.641 552.031 L 517.641 552.031 H 367.115 V 503.402 Z"
+                                                      style="paint-order: stroke; stroke: rgb(40, 57, 86); fill: rgb(45, 66, 99);"
+                                                      transform="matrix(0.999988, -0.004975, 0.004975, 0.999988, -6.614995, -93.706261)"
+                                                      bx:shape="arrow 367.115 503.402 173.526 48.629 48.629 23 0 1@a26b9fd0"/>
+                                                <path d="M 232.719 503.403 H 320.719 L 320.719 503.217 L 342.719 527.717 L 320.719 552.217 L 320.719 552.032 H 232.719 V 503.403 Z"
+                                                      style="fill: rgb(236, 219, 186); stroke: rgb(236, 219, 186);"
+                                                      transform="matrix(0.999988, -0.004975, 0.004975, 0.999988, 127.780304, -31.606264)"
+                                                      bx:shape="arrow 232.719 503.217 110 49 48.629 22 0 1@b6a82ded"/>
+                                                <path d="M 367.115 503.402 H 517.641 L 517.641 503.402 L 540.641 527.717 L 517.641 552.031 L 517.641 552.031 H 367.115 V 503.402 Z"
+                                                      style="fill: rgb(200, 75, 49); stroke: rgb(200, 75, 49);"
+                                                      transform="matrix(0.999988, -0.004975, 0.004975, 0.999988, -6.614995, 32.293743)"
+                                                      bx:shape="arrow 367.115 503.402 173.526 48.629 48.629 23 0 1@a26b9fd0"/>
+                                                <text style="fill: rgb(236, 219, 186); font-family: Hammersmith One,serif; font-size: 30px; line-height: 47px; stroke-width: 1px; white-space: pre;"
+                                                      transform="matrix(2.716212, 0, 0, 2.802222, -635.460999, -1091.445435)"
+                                                      x="360.209" y="629.185">TOPIC
+                                                </text>
+                                            </svg>
+                                        </tpc-icon>
+                                    </logo>
+                                </div>
+                            </a>
+                        </tpc-logo>
+                    </div>
+                </div>
+            </tpc-masthead-container>
+        </div>
+    </div>
+    <div id="tpc-forgot" class="tpc-forgot">
+        <div id="tpc-forgot-menu" class="tpc-forgot-menu">
+            <div id="menu-title" class="menu-title">
+                <menu-tittle>=忘記密碼?=</menu-tittle>
+            </div>
+            <form id="forgot-form" class="forgot-form" onsubmit="return ProcessFormData()">
+                <div class="content">
+                    <label for="gmail" class="label">輸入Gmail
+                        <span id="acc_error" class="error"></span>
+                    </label>
+                    <input id="gmail" type="text" class="input" autocomplete="off" required>
+                </div>
+                <div class="content">
+                    <input id="forgot_button" type="submit" class="button" value="發 送">
+                </div>
+                <div class="content">
+                    <label class="label">
+                        <span id="forgot-text"> >< </span>
+                    </label>
+                </div>
+                <div class="hr"></div>
+                <div class="login-foot-a">
+                    <div class="foot-lnk">
+                        <a href="/login">登入
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                    <div class="foot-lnk">
+                        <a href="/register">註冊
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</tpc-app>
+<script src="js/_forgot_main.js"></script>
+</body>
+</html>

@@ -1,0 +1,231 @@
+canvas, caption, center, cite, code, dd, del, dfn, div, dl, dt, em, embed, fieldset, font, form, h1, h2, h3, h4, h5, h6, hr, i, iframe, img, ins, kbd, label, legend, li, menu, object, ol, p, pre, q, s, samp, small, span, strike, strong, sub, sup, table, tbody, td, tfoot, th, thead, tr, tt, u, ul, var {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+}
+
+tpc-app {
+    background: #191919;
+    display: block;
+    left: 0;
+    min-height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#masthead-container.tpc-app {
+    top: 0;
+    width: 100%;
+    z-index: 2022;
+    transform: translateY(0);
+    transition: transform 0.3s ease;
+}
+
+tpc-masthead {
+    display: block;
+    width: 100%;
+    background: #191919;
+}
+
+#container.tpc-masthead {
+    height: 120px;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Start */
+
+#start.tpc-masthead, #end.tpc-masthead {
+    display: flex;
+    flex-direction: row;
+}
+
+#start.tpc-masthead {
+    align-items: center;
+}
+
+tpc-logo {
+    display: flex;
+    flex-direction: row;
+}
+
+tpc-icon svg {
+    width: 120px;
+    height: 120px;
+}
+
+#logo.tpc-logo {
+    padding: 0;
+    align-items: center;
+    flex: none;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+}
+
+.tpc-simple-endpoint {
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* Confirm */
+
+.tpc-confirm {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 700px;
+}
+
+.tpc-confirm-menu {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 600px;
+}
+
+/* Confirm 標題 */
+
+.menu-title {
+    width: 100%;
+    height: 90px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+menu-tittle {
+    background: 50% 100% / 50% 50% no-repeat radial-gradient(ellipse at bottom, #ecdbba, transparent, transparent);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 36px;
+    font-family: "Noto Sans TC", sans-serif;
+    animation: reveal 1000ms ease-in-out forwards 200ms,
+    glow 2500ms linear infinite 2000ms;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+@keyframes reveal {
+    80% {
+        letter-spacing: 8px;
+    }
+    100% {
+        background-size: 300% 300%;
+    }
+}
+
+@keyframes glow {
+    40% {
+        text-shadow: 0 0 4px #eccfba;
+    }
+}
+
+/* Confirm內容 */
+
+.confirm-form {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    font-family: "Noto Sans TC", sans-serif;
+}
+
+.confirm-form .content {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    color: #f3eaea;
+    opacity: 0.85;
+}
+
+.confirm-form .content .label,
+.confirm-form .content .input,
+.confirm-form .content .button {
+    width: 100%;
+    display: block;
+}
+
+.confirm-form .content .input {
+    width: 460px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.confirm-form .content .input,
+.confirm-form .content .button {
+    color: #fff;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.confirm-form .content .label {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    font-size: 20px;
+}
+
+.confirm-form .content .button {
+    background: #1161ee;
+    margin-top: 44px;
+    font-size: 15px;
+    font-family: "Noto Sans TC", sans-serif;
+    height: 50px;
+}
+
+#confirm-text {
+    opacity: 0;
+    font-size: 17px;
+}
+
+.confirm-form .content .button:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.confirm-form .content label .error {
+    color: #c84b31;
+    float: right;
+    font-size: 17px;
+}
+
+
+@media screen and (max-width: 550px){
+    .tpc-confirm-menu {
+        width: 400px;
+    }
+    .confirm-form .content .input {
+        width: 360px;
+    }
+}
+
+@media screen and (max-width: 430px){
+    .tpc-confirm-menu {
+        width: 310px;
+    }
+    .confirm-form .content .input {
+        width: 270px;
+    }
+    .confirm-form .content .label {
+        display: flex;
+        flex-direction: column;
+        margin: 5px 0;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .tpc-confirm-menu {
+        width: 270px;
+    }
+    .confirm-form .content .input {
+        width: 230px;
+    }
+}
